@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
-import blogImg1 from '../../../public/images/c837a6_f395e41dff5e45eeb2252f4a02aa4698~mv2.avif'
-import blogImg2 from '../../../public/images/c837a6_80859edc14b34b8d9484a87f260e0ef5~mv2.avif'
-import blogImg3 from '../../../public/images/c837a6_b462c5e2801d4f928b27eb720a0cb542~mv2.avif'
+
+import blogImg1 from  '../../public/images/c837a6_f395e41dff5e45eeb2252f4a02aa4698~mv2.avif'
+import blogImg2 from '../../public/images/c837a6_80859edc14b34b8d9484a87f260e0ef5~mv2.avif'
+import blogImg3 from '../../public/images/c837a6_b462c5e2801d4f928b27eb720a0cb542~mv2.avif'
 
 export default function Blog() {
     return (
