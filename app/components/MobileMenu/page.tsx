@@ -1,5 +1,5 @@
-import LogIn from "../LogIn/page"
-import Navbar from "../Navbar/page"
+import LogIn from "../LogIn/page";
+import Navbar from "../Navbar/page";
 import MobileSearchInput from "../mobileSearchInput/page";
 
 // Define the type for the props
