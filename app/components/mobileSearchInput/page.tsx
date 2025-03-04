@@ -11,9 +11,7 @@ interface Product {
     name: string;
     image: string;
 }
-
-
-const MobileSearchInput = ({ click } : {click : () => void}) => {
+export default function MobileSearchInput({ click } : {click : () => void}) {
 
     const [products, setProducts] = useState<Product[]>([]);
     const [searchTerm, setSearchTerm] = useState("");
@@ -95,4 +93,3 @@ const MobileSearchInput = ({ click } : {click : () => void}) => {
 
     );
 }
-export default MobileSearchInput
