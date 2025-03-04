@@ -12,11 +12,8 @@ interface Product {
     image: string;
 }
 
-interface MobileMenuProps {
-    click: () => void; // The `click` prop is a function with no arguments and no return value
-}
 
-const MobileSearchInput: React.FC<MobileMenuProps> = ({ click }) => {
+const MobileSearchInput = ({ click } : {click : () => void}) => {
 
     const [products, setProducts] = useState<Product[]>([]);
     const [searchTerm, setSearchTerm] = useState("");
