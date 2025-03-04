@@ -7,7 +7,7 @@ interface MobileMenuProps {
     click: () => void; // The `click` prop is a function with no arguments and no return value
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ click }) => {    
+ export default function MobileMenu({ click }: MobileMenuProps) {
     return (
         // Menu for mobile
         <div className="py-5 gap-[20px] flex flex-col">
@@ -18,6 +18,5 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ click }) => {
             </div>
         </div>
     );
-};
+}
 
-export default MobileMenu;
