@@ -9,6 +9,9 @@ interface FormState {
   category: string;
   price: string;
   image: File | null;
+  featureOne: string;
+  featureTwo: string;
+  featureThree: string;
 }
 
 const AddProduct = () => {
@@ -18,6 +21,10 @@ const AddProduct = () => {
     category: '',
     price: '',
     image: null,
+    featureOne: '',
+    featureTwo: '',
+    featureThree: '',
+
   });
 
   // Define types for event handlers
@@ -40,6 +47,9 @@ const AddProduct = () => {
     formData.append('description', form.description);
     formData.append('category', form.category);
     formData.append('price', form.price);
+    formData.append('featureOne', form.featureOne);
+    formData.append('featureTwo', form.featureTwo);
+    formData.append('featureThree', form.featureThree);
     if (form.image) {
       formData.append('image', form.image);
     }
@@ -59,6 +69,9 @@ const AddProduct = () => {
         category: '',
         price: '',
         image: null,
+        featureOne: '',
+        featureTwo: '',
+        featureThree: '',
       });
     }
 
@@ -95,6 +108,29 @@ const AddProduct = () => {
         value={form.price}
         onChange={handleChange}
         type="number"
+        className="block w-full mb-2 p-2 border rounded"
+      />
+
+
+<input
+        name="featureOne"
+        placeholder="Feature 1"
+        value={form.featureOne}
+        onChange={handleChange}
+        className="block w-full mb-2 p-2 border rounded"
+      />
+      <input
+        name="featureTwo"
+        placeholder="Feature 2"
+        value={form.featureTwo}
+        onChange={handleChange}
+        className="block w-full mb-2 p-2 border rounded"
+      />
+      <input
+        name="featureThree"
+        placeholder="Feature 3"
+        value={form.featureThree}
+        onChange={handleChange}
         className="block w-full mb-2 p-2 border rounded"
       />
       <input

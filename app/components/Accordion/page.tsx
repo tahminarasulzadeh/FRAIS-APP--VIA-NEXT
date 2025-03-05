@@ -1,7 +1,11 @@
 'use client'
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoIosAdd, IoIosRemove } from "react-icons/io";
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from "@/app/store/store";
+import { setProducts } from "@/app/store/slices/productsSlice";
+
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

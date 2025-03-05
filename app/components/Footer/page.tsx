@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "../Logo/page"
 
 import { FaFacebookF } from "react-icons/fa";
@@ -47,8 +48,8 @@ export default function Footer() {
                     <div className="flex gap-5 flex-col">
                         <p className="lg:text-3xl text-xl font-thing text-zinc-950 lg:text-start text-center"><strong>FRAIS</strong></p>
                         <ul className="gap-1 flex flex-col">
-                            <li className="text-md font-thing text-zinc-950 text-center lg:text-start">OUR STORY</li>
-                            <li className="text-md font-thing text-zinc-950 text-center lg:text-start" >CONTACT US</li>
+                            <Link href="/history" className="text-md font-thing text-zinc-950 text-center cursor-pointer lg:text-start">OUR STORY</Link>
+                            <Link href='/contact' className="text-md font-thing text-zinc-950 text-center lg:text-start" >CONTACT US</Link>
                             <li className="text-md font-thing text-zinc-950 text-center lg:text-start">FAQ</li>
                         </ul>
                     </div>

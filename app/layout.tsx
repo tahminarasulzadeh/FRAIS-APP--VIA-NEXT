@@ -1,12 +1,13 @@
 'use client'
 
 // app/layout.tsx
+
 import { ReactNode } from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store/store';  // Import Redux store
-import "./globals.css";
 import Header from './components/Header/page'; // Your header component
 import Footer from './components/Footer/page'; // Your footer component
+import './global.css'
 
  function RootLayout({ children }: { children: ReactNode }) {
   return (

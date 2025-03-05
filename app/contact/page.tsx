@@ -100,7 +100,7 @@ export default function Contact() {
             </div>
 
             {/* Right Section */}
-            <div className="flex justify-center bg-parallax2  bg-cover bg-fixed bg-center min-h-[1200px]  bg-no-repeat items-center  w-full">
+            <div className="flex justify-center bg-[url(/img/candleparallax3.jpg)] bg-cover bg-fixed bg-center min-h-[1200px]  bg-no-repeat items-center  w-full">
             </div>
 
         </div>

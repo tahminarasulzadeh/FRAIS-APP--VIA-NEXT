@@ -36,6 +36,9 @@ const ProductSchema = new mongoose.Schema({
   category: String,
   price: Number,
   image: String, // Path to the uploaded image
+  featureOne: String, // New field for section one
+  featureTwo: String, // New field for section two
+  featureThree: String, // New field for section three
 });
 
 
@@ -49,9 +52,11 @@ app.get('/api/products', async(req, res) => {
 
 
 app.post('/api/products', upload.single('image'), async (req, res) => {
-  const { name, description, category, price } = req.body;
+  const { name, description, category, price, featureOne, featureTwo, featureThree } = req.body;
   const image = req.file ? `/uploads/${req.file.filename}` : null;
-  const newProduct = new Product({ name, description, category, price, image });
+  const newProduct = new Product({ name, description, category, price, image, featureOne,
+    featureTwo,
+    featureThree, });
   await newProduct.save();
   res.status(201).json({ message: 'Product created', product: newProduct });
 });
